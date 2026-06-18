@@ -200,9 +200,7 @@ a:hover {
     text-align: center;
 }
 
-/* ==========================================================================
-   NAVBAR STYLING
-   ========================================================================== */
+/* NAVBAR STYLING */
 .site-nav {
     position: fixed;
     top: 0;
@@ -376,9 +374,7 @@ a:hover {
     top: 6px;
 }
 
-/* ==========================================================================
-   HERO / LANDING SECTION STYLING
-   ========================================================================== */
+/* HERO / LANDING SECTION STYLING */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -519,9 +515,7 @@ a:hover {
     }
 }
 
-/* ==========================================================================
-   FOOTER & CONTACT FORM STYLING
-   ========================================================================== */
+/* FOOTER & CONTACT FORM STYLING */
 .site-footer {
     background: rgba(15, 12, 10, 0.95);
     backdrop-filter: blur(16px);
@@ -735,9 +729,7 @@ a:hover {
     font-size: 14px;
 }
 
-/* ==========================================================================
-   RESPONSIVENESS AND MEDIA QUERIES
-   ========================================================================== */
+/*MEDIA QUERIES*/
 @media (max-width: 991px) {
     .footer-container {
         grid-template-columns: 1fr;
