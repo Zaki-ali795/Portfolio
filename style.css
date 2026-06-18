@@ -37,7 +37,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-title);
     letter-spacing: 0.5px;
 }
@@ -58,41 +63,37 @@ a:hover {
 
 
 
-.elements 
-{
-    background: rgba(255, 255, 255, 0.08);
+.elements {
+    background: rgba(15, 12, 10, 0.65);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     padding: 30px;
     margin: 75px auto;
     max-width: 600px;
     text-align: center;
-    color: rgb(202, 13, 164);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    color: rgb(207, 12, 168);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.elements:hover 
-{
+.elements:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px 0 rgba(234, 7, 218, 0.35);
     border-color: rgba(234, 7, 218, 0.5);
 }
 
-.elements h3 
-{
+.elements h3 {
     margin-top: 0;
     font-size: 24px;
     font-family: Georgia, Times, serif;
     letter-spacing: 1px;
     color: White;
-    
+
 }
 
-.elements p 
-{
+.elements p {
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 0;
@@ -100,8 +101,8 @@ a:hover {
     opacity: 0.95;
 }
 
-.skills-container 
-{
+.education-container,
+.skills-container {
     text-align: left;
     margin-top: 20px;
     display: flex;
@@ -109,18 +110,21 @@ a:hover {
     gap: 15px;
 }
 
+.education-item,
 .skill-category {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
+.education-item strong,
 .skill-category strong {
     font-size: 16px;
     color: #FBF5F3;
     font-weight: 600;
 }
 
+.education-item span,
 .skill-category span {
     font-size: 15px;
     color: inherit;
@@ -502,9 +506,17 @@ a:hover {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* ==========================================================================
@@ -731,25 +743,25 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 50px;
     }
-    
+
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
         gap: 40px;
     }
-    
+
     .hero-content {
         max-width: 100%;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .hero-title {
         font-size: 48px;
     }
-    
+
     .image-wrapper {
         width: 280px;
         height: 280px;
@@ -760,11 +772,11 @@ a:hover {
     .site-nav {
         background: rgba(15, 12, 10, 0.95);
     }
-    
+
     .nav-toggle {
         display: block;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: var(--navbar-height);
@@ -780,28 +792,28 @@ a:hover {
         transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         overflow-y: auto;
     }
-    
+
     .nav-menu.open {
         left: 0;
     }
-    
+
     .nav-link {
         font-size: 18px;
         width: 100%;
         text-align: center;
         padding: 12px;
     }
-    
+
     .nav-link::after {
         display: none;
     }
-    
+
     .btn-contact {
         width: 200px;
         text-align: center;
         margin-top: 10px;
     }
-    
+
     .nav-socials {
         border-left: none;
         padding-left: 0;
@@ -809,26 +821,26 @@ a:hover {
         margin-top: 20px;
         gap: 25px;
     }
-    
+
     .social-icon {
         font-size: 24px;
     }
-    
+
     /* Hamburger animation */
     .nav-toggle.open .hamburger {
         background: transparent;
     }
-    
+
     .nav-toggle.open .hamburger::before {
         transform: rotate(45deg);
         top: 0;
     }
-    
+
     .nav-toggle.open .hamburger::after {
         transform: rotate(-45deg);
         top: 0;
     }
-    
+
     .form-row {
         flex-direction: column;
         gap: 20px;
@@ -839,18 +851,18 @@ a:hover {
     .hero-title {
         font-size: 38px;
     }
-    
+
     .hero-tagline {
         font-size: 16px;
     }
-    
+
     .image-wrapper {
         width: 220px;
         height: 220px;
     }
-    
+
     .elements {
         margin: 40px 15px;
         padding: 20px;
     }
-}
+}
