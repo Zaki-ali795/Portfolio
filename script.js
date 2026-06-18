@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // SCROLLSPY (ACTIVE NAV LINK HIGH LIGHTING)
     // ----------------------------------------------------
     const sections = document.querySelectorAll('header, div.elements, footer');
-    
+
     const scrollSpy = () => {
         let currentSectionId = '';
         const scrollPosition = window.scrollY + 150; // offset navbar height + margin
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
-            
+
             if (sectionId && scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 currentSectionId = sectionId;
             }
@@ -60,10 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', scrollSpy);
     // Initial run on load
     scrollSpy();
-
-    // ----------------------------------------------------
     // CONTACT FORM INTERACTIVE SUBMISSION
-    // ----------------------------------------------------
+
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
 
@@ -89,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     formSuccess.classList.remove('hidden');
                     formSuccess.style.opacity = '0';
                     formSuccess.style.transform = 'translateY(10px)';
-                    
+
                     // Simple animation for success message showing up
                     setTimeout(() => {
                         formSuccess.style.transition = 'all 0.5s ease';
